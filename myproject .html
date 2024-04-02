@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Forest a society category bootstrap </title>
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--start of header  -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="./myproject .html">Forest</a></h1>
+                <ul>
+    <li><a href="./myproject .html" style="color: greenyellow;">Home</a></li>
+                    <li><a href="./myproject .html#about">About</a></li>
+                    <li><a href="./myproject .html#services">Service</a></li>
+                    <li><a href="./myproject .html#gallery">Gallery</a></li>
+                    <li><a href="./myproject .html#team">Team</a></li>
+                    <li><a href="./myproject .html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="contain">
+            <h2>Global Warming</h2>
+            <h1>SAVE FOREST AND SAVE EARTH</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt utadipiscing
+                elit sed do <br> eiusmod tempor incididunt Lorem</P>
+        </div>
+        <div class="box">
+            <div class="box1"> <a href="#" >About Us</a>
+            </div>
+            <div class="box2"><a href="#">Join Us</a></div>
+        </div>
+    </header>
+    <!-- about -->
+    <section id="about">
+        <div class="page">
+            <h2>What we do</h2>
+            <h1>STANDING TOGETHER FOR A BETTER WORLD</h1>
+            <p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                'Lorem ipsum dolor sit amet, consectetur'
+            </p><img
+                src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/ab1.jpg"
+                alt="">
+        </div>
+        <div class="line">
+            <div class="line1">
+                <h3 >About Us</h3>
+                <h1>we cannot afford to fail in our mission to save a living planet</h1>
+                <p>delectus reiciendis maiores alias consequatur aut.maiores alias Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit sed do eiusmod <br> delectus reiciendis maiores alias consequatur
+                    aut.maiores alias Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+        </div>
+    </section>
+    <!-- services  -->
+    <section id="services">
+        <div class="container">
+            <div class="con">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut
+                    labore</p>
+                <div class="con1">
+                    <h2>What we provide</h2>
+                    <h1>Our Services</h1>
+                </div>
+            </div>
+            <div class="con3">
+                <div class="item">
+                    <span>
+                        <i class='bx bxs-leaf'></i>
+                    </span>
+                    <div class="item1">
+                        <h2>Planting</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item2">
+                        <span><i class='bx bxs-hand'></i></span>
+                        <h2>Wildlife</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item3">
+                        <span><i class='bx bxs-tree'></i></span>
+                        <h2>Save plants</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item4">
+                        <span><i class='bx bxs-droplet'></i></span>
+                        <h2>Watering</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item5">
+                        <span><i class='bx bx-leaf'></i></span>
+                        <h2>Save Trees</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item6">
+                        <span><i class='bx bx-cloud-snow'></i></span>
+                        <h2>Eco Climate</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery  -->
+    <section id="gallery">
+        <div class="container2">
+            <div class="gallery">
+                <h2>See our work</h2>
+                <h1>Our Gallery</h1>
+            </div>
+            <div class="gallery1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+            <div class="gallery10">
+                <div class="gallery2">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g1.jpg"
+                        alt="">
+                    <div class="gallery3">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g2.jpg"
+                            alt="">
+
+                        <div class="gallery4"><img
+                                src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g3.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="gallery5">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g7.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="gallery20">
+                    <div class="gallery21">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g4.jpg"
+                            alt="">
+                        <div class="gallery22">
+                            <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/t3.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery23">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g4.jpg"
+                            alt="">
+                        <div class="gallery24">
+                            <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g5.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="gallery25">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/g6.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <span><i class='bx bxs-hand'></i></span>
+                <h2>1200</h2>
+                <h1>Save</h1>
+            </div>
+            <div class="footer2">
+                <span><i class='bx bx-smile'></i></span>
+                <h2>2000</h2>
+                <h1>Projects</h1>
+            </div>
+            <div class="footer3">
+                <span><i class='bx bx-leaf'></i></i></span>
+                <h2>4000</h2>
+                <h1>Plants</h1>
+            </div>
+            <div class="footer4">
+                <span><i class='bx bx-globe'></i></span>
+                <h2>200</h2>
+                <h1>Countries</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container3">
+            <div class="lorem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                    eiusmod tempor incididunt ut labore</p>
+            </div>
+            <div class="lorem1">
+                <h2>Our hard work</h2>
+                <h1>Our Features</h1>
+            </div>
+        </div>
+        <div class="lorem2">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/ab2.jpg"
+                alt="">
+            <div class="lorem3">
+                <div class="lorem4">
+                    <span><i class='bx bxs-tree-alt'></i></span>
+                    <div class="lorem5">
+                        <h2>Planting Trees and Plants</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
+                    </div>
+                </div>
+
+                <div class="lorem6">
+                    <span><i class='bx bxs-cloud-upload'></i></span>
+                    <div class="lorem7">
+                        <h2>Change Climate Bio-Epoxy</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
+                    </div>
+                </div>
+
+                <div class="lorem8">
+                    <span><i class='bx bx-shield-quarter'></i></span>
+                    <div class="lorem9">
+                        <h2>Reduce Pollution For life</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </div>
+    </div>
+    </section>
+    <section id="team">
+        <div class="container5">
+            <div class="profile">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+                <div class="profile1">
+                    <h2>What Say peoples</h2>
+                    <h1>Our Clients</h1>
+                </div>
+                <div class="profile3">
+                    <div class="pro">
+                        <div class="girl">
+                            <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/c1.jpg"
+                                alt="">
+                            <h1>Ted Willson</h1>
+                            <h2>Our Client</h2>
+                            <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="boy">
+                            <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/c2.jpg"
+                                alt="">
+                            <h1>Orcand Keen</h1>
+                            <h2>Our Client</h2>
+                            <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="old">
+                            <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/c3.jpg"
+                                alt="">
+                            <h1>Jack Killy</h1>
+                            <h2>Our Client</h2>
+                            <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="leg">
+            <span><i class='bx bx-play-circle'></i></span>
+            <h1>Save Forest And Nature</h1>
+            <p>Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="volunteer">
+            <div class="volunteer1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut
+                    labore</p>
+                <div class="volunteer2">
+                    <h2>We Are Best</h2>
+                    <h1>Our Volunteer</h1>
+                </div>
+            </div>
+            <div class="volunteer3">
+                <div class="voln">
+                    <div class="voln1">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/t1.jpg"
+                            alt="">
+                        <h2>Lily will</h2>
+                        <h3>Volunteer</h3>
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+
+
+                    </div>
+                </div>
+                <div class="voln">
+                    <div class="voln2">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/t2.jpg"
+                            alt="">
+                        <h2>Rose Hunt</h2>
+                        <h3>Volunteer</h3>
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                    </div>
+                </div>
+                <div class="voln">
+                    <div class="voln3">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/t3.jpg"
+                            alt="">
+                        <h2>Jill Kent</h2>
+                        <h3>Volunteer</h3>
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                    </div>
+                </div>
+                <div class="voln">
+                    <div class="voln4">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/t4.jpg"
+                            alt="">
+                        <h2>Mart kelly</h2>
+                        <h3>Volunteer</h3>
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact  -->
+    <section id="contact">
+    <div class="section">
+        <div class="contact">
+            <div class="contact1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut
+                    labore</p>
+                <div class="contact2">
+                    <h2>Get Touch in</h2>
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="form1">
+                <form class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9623445850075!2d138.60414787487136!3d-34.907394473597876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0c9245edbe4ff%3A0xceffa1c790e63eaa!2sMelbourne%20St%2C%20North%20Adelaide%20SA%205006%2C%20Australia!5e0!3m2!1sen!2snp!4v1709125550967!5m2!1sen!2snp"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>© 2018 Forest. All Rights Reserved | Design by <span><a href="#">W3 Layout</a></span></p>
+        <div class="icon">
+            <a href="./myproject .html"><i class='bx bxl-meta'></i></a>
+            <a href="./myproject .html"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="./myproject .html"><i class='bx bxl-twitter'></i></a>
+            <a href="./myproject .html"><i class='bx bxl-linkedin'></i></a>
+            <a href="./myproject .html"><i class='bx bxl-tiktok'></i></a>
+        </div>
+        <div class="top">
+            <a href="./myproject .html"><i class='bx bxs-to-top'></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
